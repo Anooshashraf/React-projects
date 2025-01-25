@@ -13,7 +13,7 @@ export const NavBar = () => {
             if(window.scrollY > 50){
                 setScolled(true);
             }else{
-                setScolled(false);
+                setScolled(true);
             };
         }
         window.addEventListener("scroll",onScroll);
