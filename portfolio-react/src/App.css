@@ -168,8 +168,8 @@ span.NavBar-text{
 
 .nav.NavBar .NavBar-toggler:active,
 .nav.NavBar .NavBar-toggler:focus{
-outline: none;
-box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 
