@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-p, a, li, button, ul {
+/* p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -72,7 +72,7 @@ input:focus, textarea:focus, select:focus {
 		max-width: 100%;
 		padding: 0 150px;
 	}
-}
+} */
 
 p.success {
 	color: green;
@@ -107,7 +107,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+    opacity: 2;
 }
 span.navbar-text {
     display: flex;
@@ -229,3 +229,83 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+
+/* Banner CSS*/
+.banner{
+  margin-top:0;
+  padding:260px 0 100px 0;
+  background-image: url('./assets/images/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .tag-line{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90deg , rgba(170,54,124,0.5)-5.81%, rgba(74,47,189,0.5)111.58%);
+  border: 1px solid rgba(0.5, 255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p{
+  color: #888888;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  line-height: 1.8rem;
+  width: 96%;
+}
+.banner button{
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  font-weight: 700;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 10px 20px;
+}
+
+.banner button svg{
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover svg{
+  margin-left: 25px;
+}
+.banner img{
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown{
+  0%{
+    transform: translateY(-20px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translate(-20px);
+  }
+}
+
+.text-rotate > .wrap{
+  border-right: 0.08em solid #666;
+}
+
