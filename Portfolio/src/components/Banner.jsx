@@ -2,7 +2,10 @@ import { useState , useEffect} from "react";
 import { Container, Row , Col} from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/images/header-img.svg";
-
+import TrackVisibility from "react-on-screen";
+import "animate.css";
+// import { isVisible} from "@testing-library/user-event/dist/utils";
+// import { BrowserRouter as Router } from 'react-router-dom';
 
 export const Banner = () => {
     const [loopNum , setLoopNum] = useState(0);
@@ -48,13 +51,23 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tag-line">Welcome to my portfolio!</span>
-                        <h1>{`Hi I'm webcoded`} <span className="wrap">Web-developer</span></h1>
-                        <p>abc...........</p>
-                        <button onClick={() => console.log('connected!')}>Let's Connect <ArrowRightCircle size={25}/></button>
+                        <TrackVisibility>
+                        {({isVisible}) => 
+                            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                <span className="tag-line">Welcome to my portfolio!</span>
+                                <h1>{`Hi I'm webcoded`} <span className="wrap">Web-developer</span></h1>
+                                <p>abc...........</p>
+                                <button onClick={() => console.log('connected!')}>Let's Connect <ArrowRightCircle size={25}/></button>
+                            </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col  xs={12} md={6} xl={5}>
-                    <img src={headerImg} alt="Header image"></img>
+                    <TrackVisibility>
+                    {({ isVisible }) =>
+                        <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                        <img src={headerImg} alt="Header Img"/>
+                        </div>}
+                    </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
