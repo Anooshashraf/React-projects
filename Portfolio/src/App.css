@@ -571,7 +571,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
   padding: 85px 125px;
   margin-bottom: 80px;
-  margin-top: -122px;
+  margin-top: 30px;
 }
 .newsletter-bx h3 {
   font-weight: 700;
@@ -593,7 +593,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 20px;
   position: absolute;
   z-index: -1;
-  top: -1px;
+  top: -2px;
   left: -1px;
   bottom: -1px;
   right: -1px;
@@ -624,6 +624,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
+
 }
 .footer img {
   width: 26%;
