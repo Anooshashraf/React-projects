@@ -1,9 +1,14 @@
 import { brainwave } from "../assets";
 import { navigation } from "../constants";
-import { useLocation } from "react";
+import { useLocation, useState } from "react";
 import Button from "./Button";
+import { MenuSvg } from "../assets/svg/MenuSvg";
+import { HamburgerMenu } from "./design/Header";
 
 const Header = () => {
+  const pathName = useLocation();
+  const[openNavigation , setOpenNavigation] = useState(false);
+  
   return (
     <div className='fixed top-0 left-0 w-full z-50 bg-n-8/90 backdrop-blur-sm border-b
      border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm'>
