@@ -1,7 +1,8 @@
-import { collabContent, collabText } from '../constants';
+import { collabApps, collabContent, collabText } from '../constants';
 import { brainwaveSymbol, check } from "../assets";
 import Section from './Section';
 import Button from './Button';
+import { LeftCurve , RightCurve} from "./design/Collaboration";
 
 const Collaboration = () => {
   return (
@@ -43,7 +44,28 @@ const Collaboration = () => {
                   </div>
                 </div>
               </div>
-
+              <ul>
+                {
+                  collabApps.map((app,index)=>(
+                    <li key={app.id} className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem]
+                    origin-bottom rotate-${index * 45}`}>
+                      <div className={`relative -top-[1rem] flex
+                      width-[3.2rem] bg-n-7 border border-n-1/15
+                      rounded-xl -rotate-${index * 45}`}>
+                        <img 
+                        className='m-auto' 
+                        width={app.width} 
+                        height={app.height}
+                        src={app.icon} 
+                        alt="collaboration images"
+                         />
+                      </div>
+                    </li>
+                  ))
+                }
+              </ul>
+              <LeftCurve/>
+              <RightCurve/>
             </div>
         </div>
       </div>
