@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { check, service1 } from "../assets";
+import { check, service1,service2,service3 } from "../assets";
 import { brainwaveServices } from "../constants";
 import Generating from "./Generating";
 
@@ -43,6 +43,26 @@ const Services = () => {
             <Generating className={`absolute left-4 right-4
             bottom-4 border-n-1/10 border lg:left-1/2 lg:right-auto lg:bottom-8 
             lg:w-[31rem] lg:-translate-x-1/2`}/>
+          </div>
+          <div className="relative z-1 grid gap-5 lg:grid-cols-2">
+              <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl
+              overflow-hidden">
+                <div className="absolute inset-0">
+                  <img 
+                  src={service2}
+                  className="h-full w-full object-cover"
+                  width={630}
+                  height={750}
+                  alt="robot"
+                  />
+                </div>
+                <div className="absolute inset-0 flex  flex-col justify-end p-8 bg-gradient-to-b
+                from-n-8/0 to-n-8/90 lg:p-15">
+                  <h4 className="h4 mb-4">Smartest AI</h4>
+                  <p className="body-2 mb-[3rem] text-n-4">Brainwave Unlocks The 
+                  Potential For AI Powered Applications</p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
