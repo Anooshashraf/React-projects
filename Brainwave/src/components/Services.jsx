@@ -1,6 +1,8 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1 } from "../assets";
+import { check, service1 } from "../assets";
+import { brainwaveServices } from "../constants";
+import Generating from "./Generating";
 
 const Services = () => {
   return (
@@ -15,7 +17,8 @@ const Services = () => {
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5
           p-8 border border-n-1-10 rounded-3xl overflow-hodden lg:p-20 xl:h-[46rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none
+            md:w-3/5 xl:w-auto">
               <img 
               className="w-full h-full object-cover md:object-right"
               src={service1}
@@ -24,7 +27,22 @@ const Services = () => {
               alt="Smartest AI"
               />
             </div>
+            <div className="relative z-1 max-w-[17rem] ml-auto">
+              <h4 className="h4 mb-4">Smartest AI</h4>
+              <p className="body-2 mb-[3rem] text-n-4">Brainwave Unlocks The Potential For AI Powered Applications</p>
+              <ul className="body-2">
+                {brainwaveServices.map((items,index)=>(
+                  <li className="flex items-start py-4 border-t border-n-6 gap-3" key={check}>
+                    <img src={check}/>
+                    <p>{items}</p>
 
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <Generating className={`absolute left-4 right-4
+            bottom-4 border-n-1/10 border lg:left-1/2 lg:right-auto lg:bottom-8 
+            lg:w-[31rem] lg:-translate-x-1/2`}/>
           </div>
         </div>
       </div>
