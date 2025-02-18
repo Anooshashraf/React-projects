@@ -3,6 +3,7 @@ import Heading from "./Heading";
 import { check, service1,service2,service3 } from "../assets";
 import { brainwaveServices } from "../constants";
 import Generating from "./Generating";
+import { PhotoChatMessage , VideoBar , VideoChatMessage , Gradient} from "./design/Services";
 
 const Services = () => {
   return (
@@ -58,16 +59,22 @@ const Services = () => {
                 </div>
                 <div className="absolute inset-0 flex  flex-col justify-end p-8 bg-gradient-to-b
                 from-n-8/0 to-n-8/90 lg:p-15">
-                  <h4 className="h4 mb-4">Smartest AI</h4>
-                  <p className="body-2 mb-[3rem] text-n-4">Brainwave Unlocks The 
-                  Potential For AI Powered Applications</p>
+                  <h4 className="h4 mb-4">Smart Photo Editing</h4>
+                  <p className="body-2 mb-[3rem] text-n-4">Automatically Enhance Your 
+                  Photos And Videos By Using Our AI&apos;s Photo Editing Feature.
+                  Try it Now!
+                  </p>
                 </div>
+                <PhotoChatMessage/>
+              </div>
+              <div className="p-4 bg-n-7 rounded-3xl overflow-hidden">
+
               </div>
           </div>
         </div>
       </div>
     </Section>
-  )
-}
+  );
+};
 
 export default Services;
