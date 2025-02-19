@@ -1,4 +1,5 @@
 import { pricing} from "../constants";
+import Button from "./Button";
 
 const PricingList = () => {
   return (
@@ -21,6 +22,11 @@ const PricingList = () => {
                     </div>
                   )}
                 </div>
+                <Button className={`w-full mb-full`} href={item.price ?  '/pricing' : 'mailto:contact@jsmastery.pro'}
+                white={!!item.price}>
+                  {item.price ? "Get Started" : "Contact Us"}
+
+                </Button>
             </div>
         ))}
         {/* <div className="">
