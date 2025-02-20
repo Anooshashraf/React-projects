@@ -16,14 +16,15 @@ const Roadmap = () => {
           {roadmap.map((item)=>{
             const status = item.status === 'done' ? 'Done' : 'In Progress'
             return( 
-            <div key={item.id}>
-              <div>
+            <div key={item.id} className={`md:flex even:md:traslate-y-[7rem] p-0.25 border
+            border-n-1/50 rounded-[2.5rem] ${item.colorful ? 'bg-conic-gradient' : 'bg-n-6'}`}>
+              <div className="relative p-8 bg-n-8">
                 <div>
                   <img src={grid} className="w-full" width={550} height={550} alt="grid" />
                   <div className="relative z-1">
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col items-center justify-between">
                       <Tagline>{item.date}</Tagline>
-                       <div>
+                       <div className="">
                         <img src={item.status==='done' ? {check2} : {loading1}}
                         className={`mr-2.5`}
                         width={16}
@@ -41,6 +42,8 @@ const Roadmap = () => {
                           alt={item.title}
                           />
                        </div>
+                       <h4 className="h4 mb-4">{item.title}</h4>
+                       <p className="body-2 text-n-4">{item.text}</p>
                     </div>
                   </div>
                 </div>
