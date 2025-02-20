@@ -8,9 +8,14 @@ import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
   <Section crosses
-  className="overflow-hidden" id="roadmap">
+  className="overflow-hidden" 
+  id="roadmap"
+  >
     <div className="container md:pb-10">
-      <Heading tagline="Ready to get started" title="What we’re working on" />
+      <Heading 
+      tagline="Ready to get started" 
+      title="What we’re working on" 
+      />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {roadmap.map((item) => {
