@@ -28,16 +28,27 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
 
+    const toggleNavigation = () => {
+      if(scrolled){
+        setScrolled(false);
+        enablePageScroll();
+      }else{
+        setScrolled(true);
+        disablePageScroll();
+      };
+    };
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={`${scrolled ? "scrolled" : ""} fixed top-0 left-0 w-full z-50 border-b
+       `}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img className="h-[2rem]  w-full " src={logo} width={27} height={27} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
