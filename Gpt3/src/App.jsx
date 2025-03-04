@@ -3,7 +3,11 @@ const App = () => {
   return (
     <>
       <div>
-        
+        <Article/>
+        <Feature/>
+        <Cta/>
+        <Navbar/>
+        <Brand/>
       </div>
     </>
   )
