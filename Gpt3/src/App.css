@@ -30,8 +30,8 @@ a{
 }
 
 .rotate-scale-up {
-	-webkit-animation: rotate-scale-up 0.85s linear both;
-	        animation: rotate-scale-up 0.85s linear both;
+	-webkit-animation: rotate-scale-up 1s linear both;
+	        animation: rotate-scale-up 1s linear both;
 }
 
 @-webkit-keyframes rotate-scale-up {
