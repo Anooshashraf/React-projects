@@ -1,7 +1,32 @@
+import "./header.css";
+import people from "../../assets/people.png"
+import hero from "../../assets/hero.png"
 
 const Header = () => {
   return (
-    <div></div>
+    <div className="gpt3__header section__padding" id="home">
+      <div className="gpt3__header-content">
+        <h1 className="gradient__text">
+        Let’s Build Something amazing with GPT-3 OpenAI
+        </h1>
+        <p className="gradient__text">
+        Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. 
+        Indulgence way everything joy alteration boisterous the attachment. 
+        Party we years to order allow asked of.
+        </p>
+        <div className="gpt3__header-content__input">
+          <input type="email" placeholder="Your Email Address..."/>
+          <button type="Button">Get Started</button>
+        </div>
+        <div className="gpt3__header-content__peopple">
+          <img src={people} alt="" />
+        </div>
+        <div className="gpt3__header-image">
+        <img src={hero} alt="hero" />
+      </div>
+      </div>
+      
+    </div>
   )
 }
 
