@@ -44,14 +44,19 @@
     margin: 0 1rem;
     cursor: pointer;
 }
-.gpt3__navbar-sign button{
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button{
     background: rgb(180, 86, 141);
     margin: 0 1rem; 
-    padding: 1rem 2rem;
+    padding: 1rem;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: var(--font-family);
 }
 
 .gpt3__navbar-menu{
@@ -69,7 +74,7 @@
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
-    background: var(--color-footer);
+    background:  rgb(11, 11, 59);
     padding: 2rem;
     position: absolute;
     top: 40px;
@@ -77,11 +82,41 @@
     margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
-    box-shadow: 0 0 5 rgba(0, 0,0, 0.2);
+    box-shadow: 0 0 5 rgba(19, 19, 111, 1);
 }
 .gpt3__navbar-menu_container p{
     margin: 1rem 0;
 }
 .gpt3__navbar-menu_container-links-sign{
     display: none;
+}
+
+@media screen and (max-width : 1050px){
+    .gpt3__navbar-links_container{
+        display: none;
+    }
+    .gpt3__navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width : 700px){
+    .gpt3__navbar{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .gpt3__navbar{
+        padding: 2rem;
+    }
+    .gpt3__navbar-sign{
+        display: none;
+    }
+    .gpt3__navbar-menu_container{
+        top: 20px;
+    }
+    .gpt3__navbar-menu_container-links-sign{
+        display: block;
+    }
 }
