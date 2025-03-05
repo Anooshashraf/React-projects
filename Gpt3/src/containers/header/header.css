@@ -13,15 +13,16 @@
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 62px;
+    color:linear-gradient(89.97deg, rgb(99, 55, 100) 1.84%, rgba(19, 19, 111, 1) 102.67%);
     line-height: 75px;
     letter-spacing: -0.04em;
 }
 .gpt3__header-content p{
+    color: rgb(32, 23, 23) ;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 30px;
-    color: #000000;
     letter-spacing: -0.02em;
 }
