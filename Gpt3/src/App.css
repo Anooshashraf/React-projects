@@ -13,10 +13,11 @@ a{
 }
 .gradient__bg {
     /* global 92%+ browsers support */
-    background: radial-gradient(circle at 4% 12%, rgb(124, 66, 100) 37%, rgb(17, 17, 92) 90%);
+    /* background: radial-gradient(circle at 4% 12%, rgb(124, 66, 100) 37%, rgb(17, 17, 92) 90%); */
+    background: linear-gradient(90deg, rgb(9, 1, 73) 35%, rgb(105, 29, 99) 87%);
 }
 .gradient__text{
-    background: #fff;
+    background: linear-gradient(90deg, rgba(13, 1, 102, 1) 28%, rgba(148, 49, 140, 1) 87%);;
     background-clip: text ;
     -webkit-background-clop:text ;
     -webkit-text-fill-color:transparent ;
