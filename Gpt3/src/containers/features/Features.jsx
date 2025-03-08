@@ -1,6 +1,6 @@
 import Feature from '../../components/feature/Feature';
 import "./features.css"
-const FeatureData = () => {
+const Features= () => {
   return (
     <div className="gpt3__features">
    
