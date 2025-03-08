@@ -10,6 +10,8 @@ const App = () => {
           <Navbar/>
           <Header/>
         </div>
+        <Brand/>
+        <WhatGPT3/>
         <Possibility/>
         <Blog/>
         <Footer/>
@@ -17,7 +19,7 @@ const App = () => {
         <Article/>
         <Feature/>
         <Cta/>
-        <Brand/>
+        
       </div>
     </>
   )
