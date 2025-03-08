@@ -1,8 +1,11 @@
-
-const Features = () => {
+import Feature from '../../components/feature/Feature';
+import "./features.css"
+const FeatureData = () => {
   return (
-    <div></div>
+    <div className="gpt3__features">
+   
+    </div>
   )
 }
 
-export default Features
+export default Features;
