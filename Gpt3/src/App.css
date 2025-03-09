@@ -17,7 +17,7 @@ a{
     background: linear-gradient(90deg, rgb(9, 1, 73) 35%, rgb(105, 29, 99) 87%);
 }
 .gradient__text{
-    background: linear-gradient(90deg, rgba(13, 1, 102, 1) 28%, rgb(38, 78, 165) 87%);;
+    background: linear-gradient(90deg, rgb(82, 69, 180) 28%, rgb(105, 29, 99) 87%);;
     background-clip: text ;
     -webkit-background-clop:text ;
     -webkit-text-fill-color:transparent ;
