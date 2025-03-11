@@ -14,10 +14,11 @@ const App = () => {
         <WhatGPT3/>
         <Features/>
         <Possibility/>
+        <Cta/>
         <Blog/>
         <Footer/>
         <Article/>
-        <Cta/>
+        
         
       </div>
     </>
