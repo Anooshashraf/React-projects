@@ -1,6 +1,6 @@
 import './blog.css';
 import {Article} from '../../components';
-// import { blog1 , blog2 ,blog3,blog4 ,blog5} from "../../assets"
+import { BLog1 , BLog2 ,BLog3,BLog4 ,BLog5} from "./imports";
 const Blog = () => {
   return (
     <div className="gpt3__blog section__padding" >
@@ -11,13 +11,13 @@ const Blog = () => {
       </div>
       <div className='gpt3__blog-container'>
         <div className='gpt3__blog-container__groupA'>
-          {/* <img src={blog1} alt="blog1" /> */}
+          <Article imgURL={BLog4} date={'Sep 03,2004'} title="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
         </div>
         <div className='gpt3__blog-container__groupB'>
-          {/* <img src={blog2} alt="blog2" />
-          <img src={blog3} alt="blog3" />
-          <img src={blog4} alt="blog4" />
-          <img src={blog5} alt="blog5" /> */}
+          <Article imgURL={BLog2} date={'Sep 03,2004'} title="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
+          <Article imgURL={BLog3} date={'Sep 03,2004'} title="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
+          <Article imgURL={BLog1} date={'Sep 03,2004'} title="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
+          <Article imgURL={BLog5} date={'Sep 03,2004'} title="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
         </div>
       </div>
     </div>
