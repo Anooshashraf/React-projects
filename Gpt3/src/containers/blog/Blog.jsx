@@ -6,7 +6,7 @@ const Blog = () => {
     <div className="gpt3__blog section__padding" >
       <div className="gpt3__blog-heading">
         <h1 className="gradient__text">
-          Alot is happening  and we are blogging  about it
+          Alot is happening, <br/> and we are blogging  about it
         </h1>        
       </div>
       <div className='gpt3__blog-container'>
