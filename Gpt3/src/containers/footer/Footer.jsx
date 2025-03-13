@@ -3,7 +3,7 @@ import gpt3Logo from '../../assets/logo.svg';
 const Footer = () => {
   const links = ['Overons', 'Social Media' ,'Counters', 'Contact'];
   const Company = ['Terms & Conditions', 'Privacy Policy' ,'Contact'];
-  const getInTouch = ['Crechterwoord K12 182 DK Alknjkcb', '085-132567' ,'info@payme.net'];
+  const getInTouch = ['Crechterwoord K12 182 DK Alknjkcb', '085-132567' ,'info@payment.net'];
 
   return (
     <div className="gpt3__footer section__padding">
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
     </div>
     
-  )
-}
+  );
+};
 
 export default Footer;
