@@ -18,13 +18,13 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="gpt3__footer-container">
-        <div className="gpt3__footer-container__heading">
+      <div className="gpt3__footer-links">
+        <div className="gpt3__footer-links_logo">
           <img src={gpt3Logo} alt="" />
           <p>Crechterwoord K12 182 DK Alknjkcb,<br/> All Rights Reserved</p>
         </div>
         
-        <div className="gpt3__footer-container__content-links">
+        <div className="gpt3__footer-links_div">
           <h2>Links</h2>
           {links.map((items,indexes)=>(
             <li key={indexes}>
@@ -32,7 +32,7 @@ const Footer = () => {
             </li>
           ))}
         </div>
-        <div className="gpt3__footer-container__content-Company">
+        <div className="gpt3__footer-links_div">
           <h2>Company</h2>
           {Company.map((items,indexes)=>(
             <li key={indexes}>
@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
           ))}
         </div>
-        <div className="gpt3__footer-container__content-getInTouch">
+        <div className="gpt3__footer-links_div">
           <h2>Get In Touch</h2>
           {getInTouch.map((items,indexes)=>(
             <li key={indexes}>
