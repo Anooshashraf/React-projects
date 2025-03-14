@@ -26,24 +26,24 @@ const Footer = () => {
         
         <div className="gpt3__footer-links_div">
           <h2>Links</h2>
-          {links.map((items,indexes)=>(
-            <li key={indexes}>
+          {links.map((items)=>(
+            <li>
               <p>{items}</p>
             </li>
           ))}
         </div>
         <div className="gpt3__footer-links_div">
           <h2>Company</h2>
-          {Company.map((items,indexes)=>(
-            <li key={indexes}>
+          {Company.map((items)=>(
+            <li >
               <p>{items}</p>
             </li>
           ))}
         </div>
         <div className="gpt3__footer-links_div">
           <h2>Get In Touch</h2>
-          {getInTouch.map((items,indexes)=>(
-            <li key={indexes}>
+          {getInTouch.map((items)=>(
+            <li>
               <p>{items}</p>
             </li>
           ))}
