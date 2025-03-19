@@ -46,7 +46,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={`${scrolled ? "scrolled" : ""} fixed top-0 left-0 w-full z-50 border-b
        `}>
-        <Container>
+        <Container className="navbar-contents">
           <Navbar.Brand href="/">
             <img className="h-[1rem] w-full" src={logo} width={27} height={27} alt="Logo" />
           </Navbar.Brand>

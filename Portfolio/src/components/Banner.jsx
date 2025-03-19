@@ -56,8 +56,9 @@ export const Banner = () => {
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tag-line">Welcome to my portfolio!</span>
                                 <h1>{`Hi I'm webcoded`} <span className="wrap">Web-developer</span></h1>
-                                <p>abc...........</p>
-                                <button onClick={() => console.log('connected!')}>Let's Connect <ArrowRightCircle size={25}/></button>
+                                
+                                <button className="vvd"><span>Let’s Connect</span></button>
+                                
                             </div>}
                         </TrackVisibility>
                     </Col>
