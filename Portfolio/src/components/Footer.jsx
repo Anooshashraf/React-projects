@@ -9,13 +9,13 @@ export const Footer = () => {
     return(
         <footer className="footer">
             <Container>
-                <Row className="align-item-center">
+                <Row className="flex flex-row item-center ">
                     <MailchimpForm/>
-                    <Col sm={6}>
-                        <img src={logo} alt="Logo"></img>
+                    <Col sm={3}>
+                        <img src={logo} className="footer-logo"></img>
                     </Col>
-                    <Col sm={6} className="text-center text-sm-end">
-                        <div className="social-icon">
+                    <Col sm={6} className="flex flex-col text-center text-sm-end justify-content: flex-end">
+                        <div className="social-icon left-0">
                             <a href="#"><img src={navIcon1} alt="" /></a>
                             <a href="#"><img src={navIcon2} alt="" /></a>
                             <a href="#"><img src={navIcon3} alt="" /></a>
